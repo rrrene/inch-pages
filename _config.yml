@@ -5,6 +5,8 @@ pygments:         true
 # Permalinks
 permalink:        pretty
 
+exclude:          ["Gemfile*", "README*", "Rakefile", "repo.html"]
+
 # Setup
 title:            Inch Pages
 tagline:          "Let's talk about documentation"

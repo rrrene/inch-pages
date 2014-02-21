@@ -1,3 +1,15 @@
+.pages-title {
+  text-align: center;
+}
+.pages-title img {
+  vertical-align: bottom;
+  opacity: 0.8;
+}
+.pages-footer small {
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
 strong,
 strong > em {
