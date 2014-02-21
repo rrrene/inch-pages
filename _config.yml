@@ -10,5 +10,5 @@ title:            Inch Pages
 tagline:          "Let's talk about documentation"
 
 inch_pages:
-  project_yaml_url: "https://github.com/inch-pages/inch-pages.github.io/edit/master/_projects.yml"
-  new_issue_url: "https://github.com/inch-pages/inch-pages.github.io/issues/new"
+  project_yaml_url: "https://github.com/rrrene/inch-pages/edit/master/_projects.yml"
+  new_issue_url: "https://github.com/rrrene/inch-pages/issues/new"
