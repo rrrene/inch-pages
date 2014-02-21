@@ -9,13 +9,6 @@ permalink:        pretty
 title:            Inch Pages
 tagline:          "Let's talk about documentation"
 
-twitter_link: ""
-
 inch_pages:
-  project_yaml_url: "#implement-me-yaml"
-  new_issue_url: "#implement-me-new-issue"
-
-# Put your project here:
-projects:
-  - rrrene/inch
-  - rrrene/sparkr
+  project_yaml_url: "https://github.com/inch-pages/inch-pages.github.io/edit/master/_projects.yml"
+  new_issue_url: "https://github.com/inch-pages/inch-pages.github.io/issues/new"
