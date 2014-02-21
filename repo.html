@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="repo-wrapper">
+  <div class="repo-card">
+    <div class="topbar">
+      <h1>
+        {{ page.repo.name }}
+        <a target="_blank" class="github-link" href="{{ page.repo.url }}"><img alt="Github mark 32px" class="github-logo" src="/public/images/GitHub-Mark-32px.png" /></a>
+      </h1>
+      <p class="description">
+        {{ page.repo.description }}
+        {% if page.repo.documentation_url != "" %}
+          &ndash;
+          <a target="_blank" href="{{ page.repo.documentation_url }}">Read the documentation</a>
+        {% endif %}
+      </p>
+    </div>
+
+    <div class="stats">
+      <div class='progress'>
+        <div class='progress-bar progress-bar-A' data-placement='bottom' data-toggle='tooltip' style='width: {{ page.repo.A.percent }}%' title='Really good'></div>
+        <div class='progress-bar progress-bar-B' data-placement='bottom' data-toggle='tooltip' style='width: {{ page.repo.B.percent }}%' title='Properly documented'></div>
+        <div class='progress-bar progress-bar-C' data-placement='bottom' data-toggle='tooltip' style='width: {{ page.repo.C.percent }}%' title='Needs work'></div>
+        <div class='progress-bar progress-bar-U' data-placement='bottom' data-toggle='tooltip' style='width: {{ page.repo.U.percent }}%' title='Undocumented'></div>
+      </div>
+    </div>
+    <div class="repo-info">
+      <div class="explanation">
+        {% markdown %}{% include repo/explanation.md %}{% endmarkdown %}
+      </div>
+
+      {% include repo/grade_lists.html %}
+
+      <!-- {% include repo/participate_box.html %} -->
+    </div>
+
+    <a name="about"></a>
+    <div class="what-is-this">
+      {% markdown %}{% include repo/about.md %}{% endmarkdown %}
+    </div>
+  </div>
+</div>
+

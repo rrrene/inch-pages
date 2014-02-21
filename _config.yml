@@ -1,0 +1,21 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Inch Pages
+tagline:          "Let's talk about documentation"
+
+twitter_link: ""
+
+inch_pages:
+  project_yaml_url: "#implement-me-yaml"
+  new_issue_url: "#implement-me-new-issue"
+
+# Put your project here:
+projects:
+  - rrrene/inch
+  - rrrene/sparkr

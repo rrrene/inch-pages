@@ -1,0 +1,219 @@
+<table class="table grade-table grade-table-A">
+  <thead>
+    <tr>
+      <th colspan=3>Seems really good</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% if page.repo.A.objects == empty %}
+      <tr class="show_more">
+        <td colspan=3>
+          &ndash;
+        </td>
+      </tr>
+    {% endif %}
+    {% for object in page.repo.A.objects %}
+      <tr>
+        <td>
+          <div class="grade-circle grade-circle-A">
+            A
+          </div>
+        </td>
+        <td class="path">
+          {{ object.fullname }}
+        </td>
+        <td>
+          <img src="/public/images/priority/{{ object.priority }}.png" title="Priority"/>
+        </td>
+      </tr>
+    {% endfor %}
+    {% if page.repo.A.more_count > 0 %}
+      <tr class="show_more">
+        <td colspan=3>
+          <a href="#" onclick="showMore('A'); return false;">Show {{ page.repo.A.more_count }} more ...</a>
+        </td>
+      </tr>
+    {% endif %}
+    {% for object in page.repo.A.more_objects %}
+      <tr class="more_object">
+        <td>
+          <div class="grade-circle grade-circle-A">
+            A
+          </div>
+        </td>
+        <td class="path">
+          {{ object.fullname }}
+        </td>
+        <td>
+          <img src="/public/images/priority/{{ object.priority }}.png" title="Priority"/>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+<table class="table grade-table grade-table-B">
+  <thead>
+    <tr>
+      <th colspan=3>Proper documentation present</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% if page.repo.B.objects == empty %}
+      <tr class="show_more">
+        <td colspan=3>
+          &ndash;
+        </td>
+      </tr>
+    {% endif %}
+    {% for object in page.repo.B.objects %}
+      <tr>
+        <td>
+          <div class="grade-circle grade-circle-B">
+            B
+          </div>
+        </td>
+        <td class="path">
+          {{ object.fullname }}
+        </td>
+        <td>
+          <img src="/public/images/priority/{{ object.priority }}.png" title="Priority"/>
+        </td>
+      </tr>
+    {% endfor %}
+    {% if page.repo.B.more_count > 0 %}
+      <tr class="show_more">
+        <td colspan=3>
+          <a href="#" onclick="showMore('B'); return false;">Show {{ page.repo.B.more_count }} more ...</a>
+        </td>
+      </tr>
+    {% endif %}
+    {% for object in page.repo.B.more_objects %}
+      <tr class="more_object">
+        <td>
+          <div class="grade-circle grade-circle-B">
+            B
+          </div>
+        </td>
+        <td class="path">
+          {{ object.fullname }}
+        </td>
+        <td>
+          <img src="/public/images/priority/{{ object.priority }}.png" title="Priority"/>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+<table class="table grade-table grade-table-C">
+  <thead>
+    <tr>
+      <th colspan=3>Needs work</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% if page.repo.C.objects == empty %}
+      <tr class="show_more">
+        <td colspan=3>
+          &ndash;
+        </td>
+      </tr>
+    {% endif %}
+    {% for object in page.repo.C.objects %}
+      <tr>
+        <td>
+          <div class="grade-circle grade-circle-C">
+            C
+          </div>
+        </td>
+        <td class="path">
+          {{ object.fullname }}
+        </td>
+        <td>
+          <img src="/public/images/priority/{{ object.priority }}.png" title="Priority"/>
+        </td>
+      </tr>
+    {% endfor %}
+    {% if page.repo.C.more_count > 0 %}
+      <tr class="show_more">
+        <td colspan=3>
+          <a href="#" onclick="showMore('C'); return false;">Show {{ page.repo.C.more_count }} more ...</a>
+        </td>
+      </tr>
+    {% endif %}
+    {% for object in page.repo.C.more_objects %}
+      <tr class="more_object">
+        <td>
+          <div class="grade-circle grade-circle-C">
+            C
+          </div>
+        </td>
+        <td class="path">
+          {{ object.fullname }}
+        </td>
+        <td>
+          <img src="/public/images/priority/{{ object.priority }}.png" title="Priority"/>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+<table class="table grade-table grade-table-U">
+  <thead>
+    <tr>
+      <th colspan=3>Undocumented</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% if page.repo.U.objects == empty %}
+      <tr class="show_more">
+        <td colspan=3>
+          &ndash;
+        </td>
+      </tr>
+    {% endif %}
+    {% for object in page.repo.U.objects %}
+      <tr>
+        <td>
+          <div class="grade-circle grade-circle-U">
+            U
+          </div>
+        </td>
+        <td class="path">
+          {{ object.fullname }}
+        </td>
+        <td>
+          <img src="/public/images/priority/{{ object.priority }}.png" title="Priority"/>
+        </td>
+      </tr>
+    {% endfor %}
+    {% if page.repo.U.more_count > 0 %}
+      <tr class="show_more">
+        <td colspan=3>
+          <a href="#" onclick="showMore('U'); return false;">Show {{ page.repo.U.more_count }} more ...</a>
+        </td>
+      </tr>
+    {% endif %}
+    {% for object in page.repo.U.more_objects %}
+      <tr class="more_object">
+        <td>
+          <div class="grade-circle grade-circle-U">
+            U
+          </div>
+        </td>
+        <td class="path">
+          {{ object.fullname }}
+        </td>
+        <td>
+          <img src="/public/images/priority/{{ object.priority }}.png" title="Priority"/>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
