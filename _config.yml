@@ -9,7 +9,7 @@ exclude:          ["Gemfile*", "README*", "Rakefile", "repo.html"]
 
 # Setup
 title:            Inch Pages
-tagline:          "Let's talk about documentation"
+tagline:          "Documentation badges for Ruby"
 
 inch_pages:
   project_yaml_url: "https://github.com/rrrene/inch-pages/edit/master/_projects.yml"
