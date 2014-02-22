@@ -239,3 +239,12 @@ img.github-logo {
 .disclaimer {
   text-align: center;
 }
+
+.everything-box {
+  text-align: center;
+  margin-top: 2rem;
+}
+.everything-box ul {
+  list-style-type: none;
+  padding: 0;
+}

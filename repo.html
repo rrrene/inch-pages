@@ -33,11 +33,15 @@ layout: default
 
       {% include repo/grade_lists.html %}
 
-      <b>Further reading:</b>
-      <ul>
-        <li><a target="_blank" href="trivelop.de/2014/02/17/why-inch-doesnot-use-percentages/">Why Inch doesn't use percentages</a></li>
-        <li><a target="_blank" href="">Inch project page</a></li>
-      </ul>
+
+      <div class="everything-box">
+        <b>Everything Inch Pages</b>
+        <ul>
+          <li><a href="/participate?repo={{ page.repo.name | url_escape }}">Get your own badge!</a></li>
+          <li><a target="_blank" href="trivelop.de/2014/02/17/why-inch-doesnot-use-percentages/">Why Inch doesn't use percentages</a></li>
+          <li><a target="_blank" href="">Inch project page</a></li>
+        </ul>
+      </div>
     </div>
 
     <a name="about"></a>
@@ -46,4 +50,3 @@ layout: default
     </div>
   </div>
 </div>
-

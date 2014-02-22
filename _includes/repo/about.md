@@ -1,7 +1,7 @@
 ## Let's raise the visiblity of documentation in Ruby!
 
-This page is for <code>{{ page.repo.name | replace: '_', '\_' }}</code> and is part of a project called "Inch Pages", showing documentation measurement provided by [Inch](http://trivelop.de/inch).
-<span style="white-space: nowrap;">Inch Pages</span> also provide a badge: <img src="/github/{{ page.repo.name }}.png">
+This page is for <code>{{ page.repo.name | replace: '_', '\_' }}</code> and is part of a project called "Inch Pages", showing documentation measurements provided by [Inch](http://trivelop.de/inch).
+<span style="white-space: nowrap;">Inch Pages</span> also provides a badge: <img src="/github/{{ page.repo.name }}.png">
 
 
 ### Can I have my own badges?
