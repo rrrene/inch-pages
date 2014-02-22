@@ -85,11 +85,7 @@ module Inch
 
       def liquify_objects(objects)
         objects.map do |object|
-          {
-            "fullname" => object.fullname,
-            "grade" => object.grade.to_s,
-            "priority" => priority_sym(object.priority).to_s,
-          }
+          CodeObject.new(object).to_liquid
         end
       end
 
@@ -100,14 +96,6 @@ module Inch
 
       def local_path
         Repomen.retrieve(git_url).path
-      end
-
-      def priority_sym(priority)
-        ::Inch::Evaluation::PriorityRange.all.each do |range|
-          if range.include?(priority)
-            return range.to_sym
-          end
-        end
       end
 
       def repo_name

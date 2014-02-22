@@ -6,18 +6,24 @@ module Inch
 
     class ProjectConfig
       class << self
+        # Returns all repo names from _projects.yml
+        # (unless DEMODE is set in ENV, in which case only the first two repos
+        # are returned)
         def all_repo_names
-          YAML.load( File.read File.join(ROOT, "_projects.yml") )
+          all = YAML.load( File.read File.join(ROOT, "_projects.yml") )
+          ENV['DEVMODE'] ? all[0..1] : all
         end
       end
     end
 
     class AccessToken
       class << self
-        def [](key)
-          all[key.to_s]
+        # Returns an access token for the given +service+
+        def [](service)
+          all[service.to_s]
         end
 
+        # @return [Hash] all access tokens
         def all
           @all ||= YAML.load( File.read File.join(ROOT, ".access_tokens") )
         end
