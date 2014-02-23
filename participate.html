@@ -7,7 +7,7 @@ project_yaml_url: "#implement-me"
 <div class="repo-wrapper">
   <div class="repo-card">
     <div class="repo-info">
-      <h2>How do I get my own badge?</h1>
+      <h2>How do I get my own badge?</h2>
       <p>
         To get a badge for your own projects, <a href="{{ site.inch_pages.project_yaml_url }}">edit this file on GitHub</a> and <strong>add your project</strong> in the form <code>username/repo</code>:
       </p>
@@ -18,17 +18,29 @@ project_yaml_url: "#implement-me"
       <p>
       I will in turn send you a pull request with your updated README (and a link to your "Inch Page", so you can check it first).
       </p>
-      <h2>Why is this not an automated service?</h1>
-      <p>
-        I would really like this to be one, but unfortunately I'm currently pretty busy (preparing my first teaching assignment). <strong>If this project gains traction, I will work on a web-service</strong> with hooks, oauth et al.
-        But until then, this solution can help us to raise awareness for good documentation in our projects.
-      </p>
+
+{% markdown %}
+### So is this a fully featured CI service?
+
+No, not yet at least. This is a ***community driven project*** based on GitHub Pages, passion, pull requests and a bit of manual labor on my part.
+
+Inch Pages is a social project at heart.
+We can always implement a full-blown web-service after we have convinced a broader audience of the importance of inline documentation.
+
+But for now, the important bits for raising the visibility of code documentation are there: ***badges and status pages***.
+{% endmarkdown %}
+
       <p>
         So: <a href="{{ site.inch_pages.project_yaml_url }}">add your project!</a> Pull requests are fun!
       </p>
-      <h2>Wait, who are you?</h1>
+
+
+      <h3>Wait, who are you?</h3>
       <p>
         I'm <a target="_blank" href="https://twitter.com/rrrene">@rrrene</a>, creator of <a target="_blank" href="http://github.com/rrrene/sparkr">sparkr</a> and <a target="_blank" href="http://github.com/rrrene/inch">Inch</a>.
+      </p>
+      <p>
+        <a target="_blank" href="https://twitter.com/rrrene">Hit me up on Twitter</a> or <a target="_blank" href="{{ site.inch_pages.new_issue_url }}">create an issue</a> in the Inch Pages project.
       </p>
     </div>
   </div>

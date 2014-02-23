@@ -3,12 +3,32 @@ layout: default
 title: Home
 ---
 
-<h1 class="pages-title"><img src="/public/images/logo.png">nch Pages</h1>
-
 <div class="repo-wrapper">
   <div class="repo-card">
     <div class="repo-info">
-      <h2>What is Inch Pages?</h1>
+
+{% markdown %}
+## Documentation badges for Ruby projects ![Inline docs](/public/images/badge-example.png)
+
+### Advantages for maintainers
+
+If you are a gem developer or maintain a library you probably already use badges in your README to show that your tests are passing and your code isn't a horrible mess in need of refactoring.
+
+Now you can also show that you documented your project properly.
+
+[Click here to request a badge for your project](/participate)
+
+### Advantages for developers
+
+If you are a Ruby developer, you know the pain of cloning a project you want to improve just to find out that it is completely undocumented.
+
+Then you have to form the mental equivalent of an AST to comprehend how it all fits together. Wouldn't it be great to see the present level of documentation directly in the README?
+
+<a target="_blank" href="http://twitter.com/intent/tweet?url=http://inch-pages.github.io/&text={{ "Documentation badges for Ruby!" | url_escape }}">Click here to spread the word</a>
+
+## FAQ
+{% endmarkdown %}
+      <h3>What is Inch Pages?</h3>
       <p>
         This project is an attempt to raise the visiblity of code documentation in Ruby.
         It provides <strong>badges to include in your project's README</strong>, to show people that documenting code is a cool thing.
@@ -19,24 +39,26 @@ title: Home
         <a href="/participate">Get yours!</a>
       </p>
 
-      <h2>What is Inch?</h1>
+      <h3>What is Inch?</h3>
       <p>
         <a target="_blank" href="http://trivelop.de/inch">Inch</a> is a <strong>documentation measurement tool for Ruby</strong> that was created to help people document their code.
         It is a command-line utility that gives grades based on how complete the docs are (<a target="_blank" href="http://trivelop.de/inch">screenshots</a>).
       </p>
 
-      <h2>What is the goal?</h1>
+      <h3>What is the goal?</h3>
       <p>
         I really think that posting these badges in a project's README will benefit the project (because <strong>people can see that it's well documented</strong>) and the community by improving the visibility of documentation.
       </p>
       <p>
         Let's start a discussion, let's raise the visibility of documentation, let's talk.
-        <a target="_blank" href="https://twitter.com/rrrene">Hit me up on Twitter</a> or <a target="_blank" href="{{ site.inch_pages.new_issue_url }}">via issue</a>.
       </p>
 
-      <h2>Wait, who are you?</h1>
+      <h3>Wait, who are you?</h3>
       <p>
         I'm <a target="_blank" href="https://twitter.com/rrrene">@rrrene</a>, creator of <a target="_blank" href="http://github.com/rrrene/sparkr">sparkr</a> and <a target="_blank" href="http://github.com/rrrene/inch">Inch</a>.
+      </p>
+      <p>
+        <a target="_blank" href="https://twitter.com/rrrene">Hit me up on Twitter</a> or <a target="_blank" href="{{ site.inch_pages.new_issue_url }}">create an issue</a> in the Inch Pages project.
       </p>
     </div>
   </div>

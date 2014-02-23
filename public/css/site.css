@@ -1,6 +1,12 @@
 .pages-title {
   text-align: center;
 }
+.pages-title a {
+  color: inherit;
+}
+.pages-title a:hover {
+  text-decoration: none;
+}
 .pages-title img {
   vertical-align: bottom;
   opacity: 0.8;
