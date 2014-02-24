@@ -9,3 +9,5 @@
 - lotus/controller
 - lotus/router
 - lotus/utils
+- troessner/reek
+- troessner/transitions
