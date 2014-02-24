@@ -7,11 +7,25 @@ module Inch
     class ProjectConfig
       class << self
         # Returns all repo names from _projects.yml
-        # (unless DEMODE is set in ENV, in which case only the first two repos
-        # are returned)
+        # (unless DEMODE is set in ENV)
         def all_repo_names
           all = YAML.load( File.read File.join(ROOT, "_projects.yml") )
-          ENV['DEVMODE'] ? all[0..1] : all
+          if devmode = ENV['DEVMODE']
+            repo_names_for_dev_mode all, devmode
+          else
+            all
+          end
+        end
+
+        # Returns an array of repo names
+        #   if +devmode+ is a repo name, it returns it
+        #   otherwise if returns the first two repos in the +list+
+        def repo_names_for_dev_mode(list, devmode)
+          if devmode =~ /\//
+            [devmode]
+          else
+            list[0..1]
+          end
         end
       end
     end
