@@ -6,3 +6,6 @@
 - jnbt/java-properties
 - solnic/virtus
 - solnic/coercible
+- lotus/controller
+- lotus/router
+- lotus/utils
