@@ -4,7 +4,7 @@ gem 'octokit'
 gem 'gems'
 
 gem 'repomen'
-gem 'inch'
+gem 'inch', ">= 0.3.1.rc1"
 gem 'inch-badge'
 
 gem 'jekyll'
