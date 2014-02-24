@@ -44,6 +44,7 @@ module Inch
 
       def release_site
         guard_clean(@inch_pages_dir)
+        git_pull(@inch_pages_dir)
         build_site
         git_add_all(@inch_pages_dir)
         git_commit_all(commit_msg, @inch_pages_dir)
@@ -62,6 +63,12 @@ module Inch
         Dir[glob].each do |f|
           FileUtils.cp_r f, target
         end
+      end
+
+      def git_pull(dir)
+        cmd = "git pull"
+        out, code = sh_with_code(cmd, dir)
+        fail "Couldn't git pull. `#{cmd}' failed with the following output:\n\n#{out}\n" unless code == 0
       end
 
       def git_push(dir)
