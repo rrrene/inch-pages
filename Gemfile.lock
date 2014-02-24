@@ -1,9 +1,3 @@
-PATH
-  remote: ../inch-badge
-  specs:
-    inch-badge (0.1.0)
-      chunky_png
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -28,6 +22,8 @@ GEM
       sparkr (>= 0.2.0)
       term-ansicolor
       yard (~> 0.8.7)
+    inch-badge (0.1.0)
+      chunky_png
     jekyll (1.4.3)
       classifier (~> 1.3)
       colorator (~> 0.1)
@@ -92,7 +88,7 @@ PLATFORMS
 DEPENDENCIES
   gems
   inch
-  inch-badge!
+  inch-badge
   jekyll
   jekyll-haml
   jekyll-markdown-block

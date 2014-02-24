@@ -5,7 +5,7 @@ gem 'gems'
 
 gem 'repomen'
 gem 'inch'
-gem 'inch-badge', :path => "../inch-badge"
+gem 'inch-badge'
 
 gem 'jekyll'
 gem 'jekyll-haml'
