@@ -18,6 +18,8 @@ module Inch
       def documentation_url
         if gem_name
           @documentation_url ||= Rubygems.documentation_url(gem_name)
+        else
+          ""
         end
       end
 
@@ -64,8 +66,14 @@ module Inch
         File.exists?( File.join(localpath, filename) )
       end
 
+      def gemspec
+        Dir[File.join(local_path, "*.gemspec")].first
+      end
+
       def gem_name
-        repo_name if File.exists?("#{repo_name}.gemspec")
+        if filename = gemspec
+          File.basename filename, ".gemspec"
+        end
       end
 
       def gh_repo
