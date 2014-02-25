@@ -98,12 +98,16 @@ module Inch
       end
 
       def list_percent(objects)
-        p = (objects.size / list.objects.size.to_f)
+        p = (objects.size / object_count.to_f)
         (p* 100).to_i
       end
 
       def local_path
         Repomen.retrieve(git_url).path
+      end
+
+      def object_count
+        @object_count ||= list.objects.size
       end
 
       def repo_name
