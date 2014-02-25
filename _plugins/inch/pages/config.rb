@@ -9,12 +9,20 @@ module Inch
         # Returns all repo names from _projects.yml
         # (unless DEMODE is set in ENV)
         def all_repo_names
-          all = YAML.load( File.read File.join(ROOT, "_projects.yml") )
+          all = load_yamls("_projects.yml", "_popular.yml").flatten
           if devmode = ENV['DEVMODE']
             repo_names_for_dev_mode all, devmode
           else
             all
           end
+        end
+
+        def load_yaml(relative_path)
+          YAML.load( File.read File.join(ROOT, relative_path) )
+        end
+
+        def load_yamls(*relative_paths)
+          relative_paths.map { |path| load_yaml(path) }
         end
 
         # Returns an array of repo names
