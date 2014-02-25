@@ -8,7 +8,9 @@ module Inch
       end
 
       def badge_numbers
-        grade_lists.map { |list| list.objects.size }
+        grade_lists.map do |list|
+          relevant_objects_graded(list.grade).size
+        end
       end
 
       def description
@@ -62,6 +64,10 @@ module Inch
 
       private
 
+      def codebase
+        @codebase ||= Inch::Codebase.parse(local_path)
+      end
+
       def file?(filename)
         File.exists?( File.join(localpath, filename) )
       end
@@ -85,10 +91,7 @@ module Inch
       end
 
       def list
-        @list ||= begin
-          codebase = Inch::Codebase.parse(local_path)
-          Inch::API::List.new(codebase, {})
-        end
+        @list ||= Inch::API::List.new(codebase, {})
       end
 
       def liquify_objects(objects)
@@ -110,8 +113,23 @@ module Inch
         @object_count ||= list.objects.size
       end
 
+      # Returns only objects with non-negative priority
+      def relevant_objects
+        suggest.all_objects
+      end
+
+      def relevant_objects_graded(grade)
+        relevant_objects.select do |object|
+          object.grade == grade
+        end
+      end
+
       def repo_name
         name.split('/').last
+      end
+
+      def suggest
+        @suggest ||= Inch::API::Suggest.new(codebase, {})
       end
     end
   end
