@@ -2,6 +2,7 @@
 
 This page is for <code>{{ page.repo.name | replace: '_', '\_' }}</code> and is part of a project called "Inch Pages", showing documentation measurements provided by [Inch](http://trivelop.de/inch).
 <span style="white-space: nowrap;">Inch Pages</span> also provides a badge: <img src="/github/{{ page.repo.name }}.png">
+<small>(<a href="https://github.com/rrrene/inch-pages/commit/51555d50d21e234fa240fc9920cf7c27310ff542">not counting</a> low priority objects)</small>
 
 
 ### Can I have my own badges?
