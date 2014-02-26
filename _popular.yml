@@ -1,6 +1,4 @@
 - haml/haml
-- guard/guard
-- pry/pry
 - sferik/rails_admin
 - rom-rb/rom
 - orgsync/active_interaction
