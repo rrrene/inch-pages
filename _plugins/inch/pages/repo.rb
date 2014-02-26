@@ -101,8 +101,9 @@ module Inch
       end
 
       def list_percent(objects)
+        return 0 if object_count == 0
         p = (objects.size / object_count.to_f)
-        (p* 100).to_i
+        (p * 100).to_i
       end
 
       def local_path
