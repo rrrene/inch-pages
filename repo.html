@@ -4,6 +4,28 @@ layout: default
 
 <div class="repo-wrapper">
   <div class="repo-card">
+    <div class="badge-info">
+      <a href="#" onclick="$('#badge-image-markup').toggle();"><img src="/github/{{ page.repo.name }}.png"> &#9660;</a>
+    </div>
+    <div id="badge-image-markup" style="display: none;">
+      <p>
+        <label>Image URL:</label>
+        <input value="http://inch-pages.github.io/github/{{ page.repo.name }}.png" type="text" class="url">
+      </p>
+      <p>
+        <label>Markdown:</label>
+        <input value="[![Inline docs](http://inch-pages.github.io/github/{{ page.repo.name }}.png)](http://inch-pages.github.io/github/{{ page.repo.name }})" type="text" class="url">
+      </p>
+      <p>
+        <label>Textile:</label>
+        <input value="!http://inch-pages.github.io/github/{{ page.repo.name }}.png!:http://inch-pages.github.io/github/{{ page.repo.name }}" type="text" class="url">
+      </p>
+      <p>
+        <label>RDoc:</label>
+        <input value='{<img src="http://inch-pages.github.io/github/{{ page.repo.name }}.png" alt="Inline docs" />}[http://inch-pages.github.io/github/{{ page.repo.name }}]' type="text" class="url">
+      </p>
+    </div>
+
     <div class="topbar">
       <h1>
         {{ page.repo.name }}
@@ -51,9 +73,6 @@ layout: default
     </div>
   </div>
 </div>
-<!--
-  [![Inline docs](http://inch-pages.github.io/github/{{ page.repo.name | url_escape }}.png)](http://inch-pages.github.io/github/{{ page.repo.name | url_escape }})
--->
 <!--
 Add docs badge to README
 

@@ -39,14 +39,16 @@ module Inch
           hash[key] = send(key)
         end
         grade_lists.each do |grade_list|
-          key = grade_list.grade.to_s
+          _objects = relevant_objects_graded(grade_list.grade)
+          all_objects = liquify_objects(_objects)
+
           object_count = 5
-          all_objects = liquify_objects(grade_list.objects)
           objects = all_objects[0...object_count]
           more_objects = all_objects[object_count..-1] || []
 
+          key = grade_list.grade.to_s
           hash[key] = {}
-          hash[key]["percent"] = list_percent(grade_list.objects)
+          hash[key]["percent"] = list_percent(_objects)
           hash[key]["objects"] = objects
           hash[key]["more_objects"] = more_objects
           hash[key]["more_count"] = more_objects.size
