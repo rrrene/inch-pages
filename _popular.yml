@@ -10,3 +10,7 @@
 - mongodb/mongo-ruby-driver
 - thoughtbot/paperclip
 - rkh/mustermann
+- jekyll/jekyll
+- floere/phony
+- CanCanCommunity/cancancan
+- cequel/cequel

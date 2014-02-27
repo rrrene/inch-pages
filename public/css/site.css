@@ -77,6 +77,7 @@ body {
 }
 #badge-image-markup input.url {
   width: 16rem;
+  padding: 0.1rem;
 }
 .what-is-this {
   background-color: #f0f0f0;
