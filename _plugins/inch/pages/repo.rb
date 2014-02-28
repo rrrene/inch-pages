@@ -113,7 +113,7 @@ module Inch
       end
 
       def object_count
-        @object_count ||= list.objects.size
+        @object_count ||= relevant_objects.size
       end
 
       # Returns only objects with non-negative priority

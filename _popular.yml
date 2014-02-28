@@ -1,5 +1,5 @@
-- haml/haml
 - sferik/rails_admin
+- solnic/coercible
 - rom-rb/rom
 - orgsync/active_interaction
 - justinfrench/formtastic
@@ -13,4 +13,4 @@
 - jekyll/jekyll
 - floere/phony
 - CanCanCommunity/cancancan
-- cequel/cequel
+- visionmedia/commander
