@@ -16,5 +16,7 @@
 - docwhat/lego_nxt
 - haml/haml
 - cequel/cequel
+- CanCanCommunity/cancancan
+- rkh/mustermann
 - appdrones/page_record
 - hajee/easy_type
