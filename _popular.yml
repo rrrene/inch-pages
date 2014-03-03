@@ -10,5 +10,5 @@
 - mongodb/mongo-ruby-driver
 - thoughtbot/paperclip
 - jekyll/jekyll
-- floere/phony
-- visionmedia/commander
+- mmozuras/pronto
+- peter-murach/finite_machine
