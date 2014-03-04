@@ -6,7 +6,6 @@
 - minimagick/minimagick
 - mmozuras/pronto
 - mongodb/mongo-ruby-driver
-- mongodb/mongo-ruby-driver
 - orgsync/active_interaction
 - peter-murach/finite_machine
 - plataformatec/simple_form
@@ -14,3 +13,5 @@
 - sferik/rails_admin
 - solnic/coercible
 - thoughtbot/paperclip
+- bbatsov/rubocop
+- mperham/sidekiq
