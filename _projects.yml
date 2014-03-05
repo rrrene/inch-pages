@@ -1,7 +1,7 @@
 # Put your project here:
-- CanCanCommunity/cancancan
 - appdrones/page_record
 - avdi/naught
+- CanCanCommunity/cancancan
 - cequel/cequel
 - docwhat/lego_nxt
 - floere/phony
@@ -14,6 +14,7 @@
 - lotus/router
 - lotus/utils
 - neopoly/on
+- peter-murach/finite_machine
 - pry/pry
 - rkh/mustermann
 - rrrene/inch

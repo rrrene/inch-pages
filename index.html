@@ -2,6 +2,38 @@
 layout: default
 title: Home
 ---
+  <div style="clear:both; margin-top: 1rem;">Early adopters:</div>
+
+  <div class="featured-wrapper" style="float: {% cycle 'left', 'right' %}">
+    <div class="featured-card">
+      <div class="picture">
+        <img src="https://avatars.githubusercontent.com/u/1686160" width="64">
+      </div>
+      <div class="info">
+        <a href="/github/haml/haml"><img src="/github/haml/haml.png"></a>
+        <b>haml</b>
+        <span>HTML Abstraction Markup Language - A Markup Haiku</span>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+  <div class="featured-wrapper" style="float: {% cycle 'left', 'right' %}">
+    <div class="featured-card">
+      <div class="picture">
+        <img src="https://avatars.githubusercontent.com/u/845682" width="64">
+      </div>
+      <div class="info">
+        <a href="/github/pry/pry"><img src="/github/pry/pry.png"></a>
+        <b>PRY</b>
+        <span>An IRB alternative and runtime developer console</span>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+  <div style="clear:both"></div>
+
 
 <div class="repo-wrapper">
   <div class="repo-card">
@@ -25,9 +57,19 @@ If you are a Ruby developer, you know the pain of cloning a project you want to 
 Then you have to form the mental equivalent of an AST to comprehend how it all fits together. Wouldn't it be great to see the present level of documentation directly in the README?
 
 <a target="_blank" href="http://twitter.com/intent/tweet?url=http://inch-pages.github.io/&text={{ "Documentation badges for Ruby!" | url_escape }}">Click here to spread the word</a>
-
-## FAQ
 {% endmarkdown %}
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="repo-wrapper">
+  <div class="repo-card">
+    <div class="repo-info">
+      <h2>FAQ</h2>
       <h3>What is Inch Pages?</h3>
       <p>
         This project is an attempt to raise the visiblity of code documentation in Ruby.
@@ -63,3 +105,78 @@ Then you have to form the mental equivalent of an AST to comprehend how it all f
     </div>
   </div>
 </div>
+
+<!--
+  <div class="featured-wrapper" style="float: {% cycle 'left', 'right' %}">
+    <div class="featured-card">
+      <div class="picture">
+        <img src="https://avatars.githubusercontent.com/u/351846" width="64">
+      </div>
+      <div class="info">
+        <a href="/github/guard/guard"><img src="/github/guard/guard.png"></a>
+        <b>Guard</b>
+        <span>Guard is a command line tool to easily handle events on file system modifications.</span>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+-->
+  <div style="clear:both; margin-top: 1rem;">More early adopters:</div>
+
+  <div class="featured-wrapper" style="float: {% cycle 'left', 'right' %}">
+    <div class="featured-card">
+      <div class="picture">
+        <img src="https://1.gravatar.com/avatar/1f74b13f1e5c6c69cb5d7fbaabb1e2cb?d=https%3A%2F%2Fidenticons.github.com%2F9efb1a59d7b58e69996cf0e32cb71098.png&r=x&s=460" width="64">
+      </div>
+      <div class="info">
+        <a href="/github/sferik/twitter"><img src="/github/sferik/twitter.png"></a>
+        <b>Twitter</b>
+        <span>A Ruby interface to the Twitter API.</span>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+  <div class="featured-wrapper" style="float: {% cycle 'left', 'right' %}">
+    <div class="featured-card">
+      <div class="picture">
+        <img src="https://1.gravatar.com/avatar/5fe204135849ac59602946d565992285?d=https%3A%2F%2Fidenticons.github.com%2F3603599ee31fce12be0faf0958263356.png&r=x&s=460" width="64">
+      </div>
+      <div class="info">
+        <a href="/github/splattael/libnotify"><img src="/github/splattael/libnotify.png"></a>
+        <b>Libnotify</b>
+        <span>Ruby bindings for libnotify using FFI.</span>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+  <div class="featured-wrapper" style="margin-top: 1rem; float: {% cycle 'left', 'right' %}">
+    <div class="featured-card">
+      <div class="picture">
+        <img src="https://1.gravatar.com/avatar/f1e3ab214a976a39cfd713bc93deb10f?d=https%3A%2F%2Fidenticons.github.com%2F596676c0468e1aa77be2d247aa42455e.png&r=x&s=460" width="64">
+      </div>
+      <div class="info">
+        <a href="/github/visionmedia/commander"><img src="/github/visionmedia/commander.png"></a>
+        <b>Commander</b>
+        <span>The complete solution for Ruby CLIs</span>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+  <div class="featured-wrapper" style="margin-top: 1rem; float: {% cycle 'left', 'right' %}">
+    <div class="featured-card">
+      <div class="picture">
+        <img src="https://1.gravatar.com/avatar/5c2b452f6eea4a6d84c105ebd971d2a4?d=https%3A%2F%2Fidenticons.github.com%2F2ae3d2aaceaf26246581744124859b07.png&r=x&s=460" width="64">
+      </div>
+      <div class="info">
+        <a href="/github/rkh/mustermann"><img src="/github/rkh/mustermann.png"></a>
+        <b>Mustermann</b>
+        <span>Your personal string matching expert</span>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+  <div style="clear:both"></div>

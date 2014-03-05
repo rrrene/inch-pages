@@ -25,9 +25,31 @@ strong > em {
 }
 
 body {
-  background-color: rgba(168, 165, 168, 0.43) !important;
+  background: url(/public/images/topbar.png) repeat-x rgba(168, 165, 168, 0.43) !important;
+  padding-top: 8px;
 }
 
+.featured-wrapper {
+  background-color: #ffa;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2),0 -3px 8px rgba(0,0,0,0.1);
+  width: 17.5rem;
+  float: left;
+}
+.featured-card {
+  padding: 0.3rem 1rem;
+}
+.featured-card .picture {
+  float: left;
+  width: 4rem;
+}
+.featured-card .info {
+  float: left;
+  width: 11rem;
+}
+.featured-card .info span {
+  display: block;
+}
 .repo-wrapper {
   background-color: #fff;
   border-radius: 4px;
