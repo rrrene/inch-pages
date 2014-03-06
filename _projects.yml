@@ -1,6 +1,7 @@
 # Put your project here:
 - appdrones/page_record
 - avdi/naught
+- bbatsov/rubocop
 - CanCanCommunity/cancancan
 - cequel/cequel
 - docwhat/lego_nxt
@@ -10,6 +11,7 @@
 - haml/haml
 - jamesrwhite/minicron
 - jnbt/java-properties
+- kostyantyn/hydra_attribute
 - lotus/controller
 - lotus/router
 - lotus/utils
@@ -26,4 +28,3 @@
 - troessner/reek
 - troessner/transitions
 - visionmedia/commander
-- kostyantyn/hydra_attribute
