@@ -13,3 +13,6 @@
 - thoughtbot/paperclip
 - mperham/sidekiq
 - karlfreeman/multi_mime
+- pokonski/public_activity
+- charliesome/better_errors
+- rtomayko/tilt
