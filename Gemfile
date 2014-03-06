@@ -5,7 +5,7 @@ gem 'gems'
 
 gem 'repomen'
 gem 'inch', ">= 0.3.2"
-gem 'inch-badge'
+gem 'inch-badge', ">= 0.1.1"
 
 gem 'jekyll'
 gem 'jekyll-haml'
