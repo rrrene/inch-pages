@@ -35,6 +35,8 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2),0 -3px 8px rgba(0,0,0,0.1);
   width: 17.5rem;
   float: left;
+  margin-top: 1rem;
+  cursor: pointer;
 }
 .featured-card {
   padding: 0.3rem 1rem;

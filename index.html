@@ -126,6 +126,34 @@ Then you have to form the mental equivalent of an AST to comprehend how it all f
   <div class="featured-wrapper" style="float: {% cycle 'left', 'right' %}">
     <div class="featured-card">
       <div class="picture">
+        <img src="https://1.gravatar.com/avatar/7710f41976a45c0b25deaf0f2a4577bc?d=https%3A%2F%2Fidenticons.github.com%2Fdceaa0c3804da6d2357baa934f91c119.png&r=x&s=460" width="64">
+      </div>
+      <div class="info">
+        <a href="/github/bbatsov/rubocop"><img src="/github/bbatsov/rubocop.png"></a>
+        <b>RuboCop</b>
+        <span>A Ruby static code analyzer.</span>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+  <div class="featured-wrapper" style="float: {% cycle 'left', 'right' %}">
+    <div class="featured-card">
+      <div class="picture">
+        <img src="https://1.gravatar.com/avatar/d1c216897a0708f79144e2032040f751?d=https%3A%2F%2Fidenticons.github.com%2Ff22cdb30e350832a45debad90dd7f4e1.png&r=x&s=460" width="64">
+      </div>
+      <div class="info">
+        <a href="/github/troessner/reek"><img src="/github/troessner/reek.png"></a>
+        <b>Reek</b>
+        <span>Code smell detector for Ruby.</span>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+
+  <div class="featured-wrapper" style="float: {% cycle 'left', 'right' %}">
+    <div class="featured-card">
+      <div class="picture">
         <img src="https://1.gravatar.com/avatar/1f74b13f1e5c6c69cb5d7fbaabb1e2cb?d=https%3A%2F%2Fidenticons.github.com%2F9efb1a59d7b58e69996cf0e32cb71098.png&r=x&s=460" width="64">
       </div>
       <div class="info">
@@ -151,7 +179,7 @@ Then you have to form the mental equivalent of an AST to comprehend how it all f
     </div>
   </div>
 
-  <div class="featured-wrapper" style="margin-top: 1rem; float: {% cycle 'left', 'right' %}">
+  <div class="featured-wrapper" style="float: {% cycle 'left', 'right' %}">
     <div class="featured-card">
       <div class="picture">
         <img src="https://1.gravatar.com/avatar/f1e3ab214a976a39cfd713bc93deb10f?d=https%3A%2F%2Fidenticons.github.com%2F596676c0468e1aa77be2d247aa42455e.png&r=x&s=460" width="64">
@@ -165,7 +193,7 @@ Then you have to form the mental equivalent of an AST to comprehend how it all f
     </div>
   </div>
 
-  <div class="featured-wrapper" style="margin-top: 1rem; float: {% cycle 'left', 'right' %}">
+  <div class="featured-wrapper" style="float: {% cycle 'left', 'right' %}">
     <div class="featured-card">
       <div class="picture">
         <img src="https://1.gravatar.com/avatar/5c2b452f6eea4a6d84c105ebd971d2a4?d=https%3A%2F%2Fidenticons.github.com%2F2ae3d2aaceaf26246581744124859b07.png&r=x&s=460" width="64">
@@ -180,3 +208,10 @@ Then you have to form the mental equivalent of an AST to comprehend how it all f
   </div>
 
   <div style="clear:both"></div>
+
+
+<script>
+  $('body').on('click','.featured-wrapper',  function(evt) {
+    $(this).find('a')[0].click();
+  })
+</script>
