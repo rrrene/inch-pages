@@ -1,4 +1,5 @@
 # Put your project here:
+- alakra/ndfd-weather-forecast-client
 - appdrones/page_record
 - avdi/naught
 - bbatsov/rubocop
@@ -9,15 +10,25 @@
 - guard/guard
 - hajee/easy_type
 - haml/haml
+- iliabylich/winged-couch
 - jamesrwhite/minicron
 - jnbt/java-properties
 - kostyantyn/hydra_attribute
 - lotus/controller
-- alakra/ndfd-weather-forecast-client
 - lotus/router
 - lotus/utils
 - neopoly/on
+- pboling/capistrano_mailer
+- pboling/csv_pirate
+- pboling/dry_views
+- pboling/flag_shih_tzu
+- pboling/gem_bench
+- pboling/rack-insight
+- pboling/sanitize_email
+- pboling/sequential_file
+- pboling/stackable_flash
 - peter-murach/finite_machine
+- pokonski/public_activity
 - pry/pry
 - rkh/mustermann
 - rrrene/inch
@@ -29,14 +40,4 @@
 - troessner/reek
 - troessner/transitions
 - visionmedia/commander
-- iliabylich/winged-couch
-- pboling/sequential_file
-- pboling/sanitize_email
-- pboling/rack-insight
-- pboling/capistrano_mailer
-- pboling/stackable_flash
-- pboling/gem_bench
-- pboling/flag_shih_tzu
-- pboling/dry_views
-- pboling/csv_pirate
 - wordtreefoundation/archivist-client
