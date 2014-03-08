@@ -37,7 +37,8 @@ module Inch
       end
 
       def build_site
-        sh("jekyll build")
+        env = ENV['REPO'] ? "REPO=#{ENV['REPO']} " : ""
+        sh("#{env}jekyll build")
         copy_site
         success "Built site."
       end

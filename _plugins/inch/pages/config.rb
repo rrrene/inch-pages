@@ -7,10 +7,10 @@ module Inch
     class ProjectConfig
       class << self
         # Returns all repo names from _projects.yml
-        # (unless DEMODE is set in ENV)
+        # (unless DEVMODE or REPO is set in ENV)
         def all_repo_names
           all = load_yamls("_projects.yml", "_popular.yml").flatten
-          if devmode = ENV['DEVMODE']
+          if devmode = ENV['REPO'] || ENV['DEVMODE']
             repo_names_for_dev_mode all, devmode
           else
             all
@@ -32,7 +32,11 @@ module Inch
           if devmode =~ /\//
             [devmode]
           else
-            list[0..1]
+            if devmode.to_i == 0
+              []
+            else
+              list[0..1]
+            end
           end
         end
       end
