@@ -25,14 +25,19 @@ module Inch
         parts = name.split(delimiter)
         _start = [parts.shift]
         _end = [parts.pop]
+
         current_string = _start.join(delimiter) + delimiter + separator +
-                            delimiter + _end.join(delimiter)
+                          delimiter + _end.join(delimiter)
+
         result_string = current_string
         while current_string.size <= max
-          result_string = current_string
+          result_string = current_string.to_s
           _start << parts.shift
           current_string = _start.join(delimiter) + delimiter + separator +
                           delimiter + _end.join(delimiter)
+        end
+        if result_string.size > max && result_string =~ /#/
+          result_string = result_string.gsub(/(\S+)#/, '#')
         end
         result_string
       end

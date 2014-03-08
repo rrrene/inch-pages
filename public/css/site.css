@@ -225,6 +225,9 @@ img.github-logo {
   opacity: 0.2;
   vertical-align: middle;
 }
+.grade-table td.path {
+  word-wrap: break-word;
+}
 .grade-table td.path em { /* truncate separator */
   opacity: 0.5;
 }
