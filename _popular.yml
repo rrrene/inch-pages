@@ -6,7 +6,6 @@
 - mongodb/mongo-ruby-driver
 - orgsync/active_interaction
 - plataformatec/simple_form
-- rom-rb/rom
 - sferik/rails_admin
 - solnic/coercible
 - thoughtbot/paperclip
