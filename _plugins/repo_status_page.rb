@@ -21,9 +21,10 @@ module Jekyll
 
     # Creates a badge image file for the given +repo+
     def create_badge(dest)
-      filename = File.join(dest, "github", name+".png")
-      # deploy a fake badge for now
-      Inch::Badge::Image.new(filename, repo.badge_numbers).save
+      %w(png svg).each do |ext|
+        filename = File.join(dest, "github", "#{name}.#{ext}")
+        Inch::Badge::Image.create(filename, repo.badge_numbers)
+      end
     end
 
     # Obtain destination path.
