@@ -1,6 +1,7 @@
 # Put your project here:
 - alakra/ndfd-weather-forecast-client
 - appdrones/page_record
+- asm-helpful/helpful-web
 - avdi/naught
 - bbatsov/rubocop
 - CanCanCommunity/cancancan
@@ -13,10 +14,12 @@
 - iliabylich/winged-couch
 - jamesrwhite/minicron
 - jnbt/java-properties
+- joshwlewis/unitwise
 - kostyantyn/hydra_attribute
 - lotus/controller
 - lotus/router
 - lotus/utils
+- minimagick/minimagick
 - MunkiCL/viverelajacion
 - neopoly/on
 - pboling/capistrano_mailer
@@ -32,6 +35,7 @@
 - pokonski/public_activity
 - pry/pry
 - rkh/mustermann
+- rom-rb/rom
 - rrrene/inch
 - rrrene/sparkr
 - sferik/twitter
@@ -42,8 +46,5 @@
 - troessner/reek
 - troessner/transitions
 - visionmedia/commander
-- wordtreefoundation/archivist-client
 - voanhduy1512/hello_sign
-- joshwlewis/unitwise
-- minimagick/minimagick
-- rom-rb/rom
+- wordtreefoundation/archivist-client
