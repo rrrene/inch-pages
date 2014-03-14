@@ -12,7 +12,6 @@
 - karlfreeman/multi_mime
 - charliesome/better_errors
 - rtomayko/tilt
-- intridea/grape
 - thoughtbot/paperclip
 - resque/resque
 - carrierwaveuploader/carrierwave
@@ -20,3 +19,4 @@
 - nex3/sass
 - elabs/pundit
 - ankane/searchkick
+- amatsuda/kaminari
