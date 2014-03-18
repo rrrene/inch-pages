@@ -4,6 +4,8 @@
 - asm-helpful/helpful-web
 - avdi/naught
 - bbatsov/rubocop
+- bf4/code_metrics
+- bf4/code_notes
 - CanCanCommunity/cancancan
 - cequel/cequel
 - docwhat/lego_nxt
@@ -19,6 +21,8 @@
 - lotus/controller
 - lotus/router
 - lotus/utils
+- mbleigh/acts-as-taggable-on
+- metricfu/metric_fu
 - minimagick/minimagick
 - MunkiCL/viverelajacion
 - neopoly/on
