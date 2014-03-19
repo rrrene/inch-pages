@@ -57,3 +57,8 @@
 - jdantonio/concurrent-ruby
 - plataformatec/simple_form
 - trema/switch_manager
+- rspec/rspec-core
+- rspec/rspec-expectations
+- rspec/rspec-mocks
+- rspec/rspec-rails
+- rspec/rspec-support
