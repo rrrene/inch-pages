@@ -61,4 +61,3 @@
 - rspec/rspec-expectations
 - rspec/rspec-mocks
 - rspec/rspec-rails
-- rspec/rspec-support
