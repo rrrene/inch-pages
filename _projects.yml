@@ -61,3 +61,5 @@
 - rspec/rspec-expectations
 - rspec/rspec-mocks
 - rspec/rspec-rails
+- peek/peek
+- rwz/mock5
