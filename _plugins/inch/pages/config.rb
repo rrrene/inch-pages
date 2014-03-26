@@ -62,6 +62,10 @@ module Inch
           @client ||= Octokit::Client.new :access_token => AccessToken[:github]
         end
 
+        def default_documentation_url(repo_name)
+          "http://rubydoc.info/github/#{repo_name}/master/frames"
+        end
+
         def repo(repo_name)
           client.repository(repo_name)
         end

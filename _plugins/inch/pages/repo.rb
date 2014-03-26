@@ -21,7 +21,7 @@ module Inch
         if gem_name
           @documentation_url ||= Rubygems.documentation_url(gem_name)
         else
-          ""
+          GitHub.default_documentation_url(name)
         end
       end
 
