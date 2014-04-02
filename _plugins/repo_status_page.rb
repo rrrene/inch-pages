@@ -17,6 +17,8 @@ module Jekyll
       self.read_yaml(@base, @template_name)
       self.data['title'] = repo.name
       self.data['repo'] = repo.to_liquid
+
+      puts ' ' * 20 + "- #{@name}"
     end
 
     # Creates a badge image file for the given +repo+

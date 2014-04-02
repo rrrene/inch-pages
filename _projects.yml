@@ -30,7 +30,6 @@
 - mbleigh/acts-as-taggable-on
 - metricfu/metric_fu
 - minimagick/minimagick
-- MunkiCL/viverelajacion
 - neopoly/on
 - pboling/capistrano_mailer
 - pboling/csv_pirate
@@ -87,6 +86,7 @@
 - yosemsweet/resthook
 - thejchap/popular
 - mbj/mutant
-- lxventures/strutta_on_rails
+- justinfrench/formtastic
 - webhat/oplerno
 - webhat/paperclip_redis
+- RubyMoney/money
