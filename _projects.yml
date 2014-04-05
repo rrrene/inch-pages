@@ -11,6 +11,8 @@
 - cequel/cequel
 - docwhat/lego_nxt
 - danijoo/Sightstone
+- ddfreyne/cri
+- ddfreyne/ddplugin
 - floere/phony
 - guard/guard
 - hajee/easy_type
@@ -29,6 +31,8 @@
 - mbleigh/acts-as-taggable-on
 - metricfu/metric_fu
 - minimagick/minimagick
+- nanoc/nanoc
+- nanoc/nanoc-core
 - neopoly/on
 - pboling/capistrano_mailer
 - pboling/csv_pirate
