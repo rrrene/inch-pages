@@ -1,3 +1,5 @@
+- mperham/sidekiq
+- karlfreeman/multi_mime
 - MunkiStudio/viverelajacion
 - colszowka/simplecov
 - eboutic/smartfocus
@@ -7,17 +9,15 @@
 - orgsync/active_interaction
 - sferik/rails_admin
 - solnic/coercible
-- mperham/sidekiq
-- karlfreeman/multi_mime
 - charliesome/better_errors
 - rtomayko/tilt
-- thoughtbot/paperclip
 - resque/resque
 - carrierwaveuploader/carrierwave
 - jnicklas/capybara
 - nex3/sass
-- elabs/pundit
 - ankane/searchkick
 - mwerner/spigot
 - jch/html-pipeline
 - puppetlabs/puppet
+- pazdera/tco
+- estimancy/projestimate
