@@ -18,7 +18,7 @@ GEM
     haml (4.0.5)
       tilt
     highline (1.6.20)
-    inch (0.4.2)
+    inch (0.4.3.rc2)
       pry
       sparkr (>= 0.2.0)
       term-ansicolor
@@ -88,7 +88,7 @@ PLATFORMS
 
 DEPENDENCIES
   gems
-  inch (>= 0.4.2)
+  inch (>= 0.4.3.rc2)
   inch-badge (>= 0.2.1)
   jekyll
   jekyll-haml
