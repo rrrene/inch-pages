@@ -8,6 +8,13 @@
 - avdi/naught
 - bbatsov/rubocop
 - benbalter/word-to-markdown
+- bfontaine/badges2svg
+- bfontaine/Graphs.rb
+- bfontaine/pouf
+- bfontaine/set_const
+- bfontaine/silent
+- bfontaine/sq
+- bfontaine/ud
 - bf4/code_metrics
 - bf4/code_notes
 - CanCanCommunity/cancancan
