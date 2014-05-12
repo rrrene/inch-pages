@@ -132,3 +132,4 @@
 - redis/redis-rb
 - flexik/kosapi_client
 - cvut/sirius
+- zipmark/rspec_api_documentation
