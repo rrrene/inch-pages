@@ -132,3 +132,6 @@
 - redis/redis-rb
 - flexik/kosapi_client
 - cvut/sirius
+- ricardovaleriano/optioning
+- zipmark/rspec_api_documentation
+- vyorkin/synchronisable
