@@ -132,3 +132,4 @@
 - redis/redis-rb
 - flexik/kosapi_client
 - cvut/sirius
+- vyorkin/synchronisable
