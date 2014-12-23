@@ -1,4 +1,7 @@
 # Put your project here:
+- jnbt/java-properties
+- splattael/libnotify
+- splattael/minitest-around
 - 18F/answers
 - mailcannon/mailcannon
 - airbnb/synapse
@@ -47,7 +50,6 @@
 - intridea/grape
 - jamesrwhite/minicron
 - jdantonio/concurrent-ruby
-- jnbt/java-properties
 - joshwlewis/unitwise
 - justinfrench/formtastic
 - jwaldrip/flatrack
@@ -104,8 +106,6 @@
 - snusnu/substation
 - softcover/softcover
 - solnic/virtus
-- splattael/libnotify
-- splattael/minitest-around
 - thejchap/popular
 - thoughtbot/paperclip
 - trema/paper-house
